@@ -1,27 +1,16 @@
 {
-  "ReRoutes": [
+  "Routes": [
     {
+      "DangerousAcceptAnyServerCertificateValidator": true,
       "DownstreamPathTemplate": "/{everything}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 44339
+          "Host": "shoppingcart",
+          "Port": 443
         }
       ],
-      "UpstreamPathTemplate": "/api1/{everything}",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
-    },
-    {
-      "DownstreamPathTemplate": "/{everything}",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 44377
-        }
-      ],
-      "UpstreamPathTemplate": "/api2/{everything}",
+      "UpstreamPathTemplate": "/api/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
     }
   ],

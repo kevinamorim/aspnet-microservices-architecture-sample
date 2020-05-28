@@ -1,0 +1,25 @@
+version: '3.4'
+
+services:
+  gateway.webapi:
+    image: ${DOCKER_REGISTRY-}gatewaywebapi
+    build:
+      context: .
+      dockerfile: Gateway.WebApi/Dockerfile
+    networks:
+      - my-network
+
+  shoppingcart:
+    image: ${DOCKER_REGISTRY-}shoppingcart
+    container_name: shoppingcart
+    build:
+      context: .
+      dockerfile: ShoppingCart/Dockerfile
+    ports:
+       - "8088:443"
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    external: true

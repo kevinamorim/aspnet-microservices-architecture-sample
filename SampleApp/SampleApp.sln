@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway.WebApi", "Gateway.WebApi\Gateway.WebApi.csproj", "{BC1666D3-9610-4DA5-88AF-246ABDFBBD65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gateway.WebApi", "Gateway.WebApi\Gateway.WebApi.csproj", "{BC1666D3-9610-4DA5-88AF-246ABDFBBD65}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{71FFE599-FD09-469C-9419-3ADD204FB772}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCart", "ShoppingCart\ShoppingCart.csproj", "{CE66388D-4AD1-4F42-A124-F76DEE9CF701}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{305FBD3C-6AA1-4AD2-BCB6-9C1FCEE58DB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +21,20 @@ Global
 		{BC1666D3-9610-4DA5-88AF-246ABDFBBD65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC1666D3-9610-4DA5-88AF-246ABDFBBD65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC1666D3-9610-4DA5-88AF-246ABDFBBD65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE66388D-4AD1-4F42-A124-F76DEE9CF701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE66388D-4AD1-4F42-A124-F76DEE9CF701}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE66388D-4AD1-4F42-A124-F76DEE9CF701}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE66388D-4AD1-4F42-A124-F76DEE9CF701}.Release|Any CPU.Build.0 = Release|Any CPU
+		{305FBD3C-6AA1-4AD2-BCB6-9C1FCEE58DB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{305FBD3C-6AA1-4AD2-BCB6-9C1FCEE58DB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{305FBD3C-6AA1-4AD2-BCB6-9C1FCEE58DB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{305FBD3C-6AA1-4AD2-BCB6-9C1FCEE58DB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CE66388D-4AD1-4F42-A124-F76DEE9CF701} = {71FFE599-FD09-469C-9419-3ADD204FB772}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9899F02-C941-481E-A720-5E3212BF579D}

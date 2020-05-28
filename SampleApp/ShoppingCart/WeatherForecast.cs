@@ -1,9 +1,10 @@
 using System;
 
-namespace Gateway.WebApi
+namespace ShoppingCart
 {
     public class WeatherForecast
     {
+        public string ApiName { get; set; }
         public DateTime Date { get; set; }
 
         public int TemperatureC { get; set; }
